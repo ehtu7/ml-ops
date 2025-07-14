@@ -112,7 +112,7 @@ def save_metrics(metrics: dict, file_path: str) -> None:
 
 def main():
     try:
-        params = load_params(params_path='../params.yaml')
+        params = load_params(params_path=r'C:\Users\ehtmazha\OneDrive - Publicis Groupe\Desktop\AIPormt\ml-ops\params.yaml')
         clf = load_model('./models/model.pkl')
         test_data = load_data('./data/processed/test_tfidf.csv')
         
@@ -129,7 +129,7 @@ def main():
 
             live.log_params(params)
         
-        save_metrics(metrics, 'reports/metrics.json')
+        save_metrics(metrics, r'C:\Users\ehtmazha\OneDrive - Publicis Groupe\Desktop\AIPormt\ml-ops\reports\metrics.json')
     except Exception as e:
         logger.error('Failed to complete the model evaluation process: %s', e)
         print(f"Error: {e}")
