@@ -1,0 +1,8 @@
+Building Pipeline
+    Workspace Set up
+        1. create a git repo and clone in local repo (add experiments)
+        2. add src folder along with all components
+        3. Add data, models, reports directories to .gitignore file
+        4. Now git add, commit, push
+    
+    Setting up dcv pipeline (without params)
